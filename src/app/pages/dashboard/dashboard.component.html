@@ -1,0 +1,291 @@
+
+<div class=" content">
+    <div class=" row">
+      <div class=" col-12">
+        <div class=" card card-chart">
+          <div class=" card-header">
+            <div class=" row">
+              <div class=" col-sm-6 text-left">
+                <h5 class=" card-category">Virat Kohli lat 10 year </h5>
+                <h2 class=" card-title">Performance</h2>
+              </div>
+              <!-- <div class=" col-sm-6">
+                
+               <span> test</span>
+            </div> -->
+          </div>
+          <div class=" card-body">
+            <div class="chart-area"><canvas id="chartBig1"> </canvas></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" row">
+      <div class=" col-lg-4">
+        <div class=" card card-chart">
+          <div class=" card-header">
+            <h5 class=" card-category">T20 battings</h5>
+            <h3 class=" card-title">
+              <i class=" tim-icons icon-bell-55 text-danger-states"> </i> 4,037
+            </h3>
+          </div>
+          <div class=" card-body">
+            <div class="chart-area"><canvas id="chartLineRed"> </canvas></div> 
+            <!-- <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas> -->
+          </div>
+        </div>
+      </div>
+      <div class=" col-lg-4">
+        <div class=" card card-chart">
+          <div class=" card-header">
+            <h5 class=" card-category">One day</h5>
+            <h3 class=" card-title">
+              <i class=" tim-icons icon-delivery-fast text-info"> </i>Runs: 13,848
+            </h3>
+          </div>
+          <div class=" card-body">
+            <div class=" chart-area"><canvas id="OnedayBarData"> </canvas></div>
+          </div>
+        </div>
+      </div>
+      <div class=" col-lg-4">
+        <div class=" card card-chart">
+          <div class="card-header">
+            <h5 class=" card-category">Test Batting</h5>
+            <h3 class=" card-title">
+              <i class=" tim-icons icon-send text-success"> </i> Runs : 8848 
+            </h3>
+          </div>
+          <div class=" card-body">
+            <div class="chart-area"><canvas id="TestCricketData"> </canvas></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=" row">
+      <div class=" col-lg-6 col-md-12">
+        <div class=" card card-tasks">
+          <div class=" card-header">
+            <h6 class=" title d-inline">Records(5)</h6>
+            <p class=" card-category d-inline">Latest</p>
+            <div ngbDropdown>
+              <button
+                class=" btn btn-link btn-icon"
+                data-toggle="dropdown"
+                ngbDropdownToggle
+                type="button"
+              >
+                <i class=" tim-icons icon-settings-gear-63"> </i>
+              </button>
+              <div
+                aria-labelledby="dropdownMenuLink"
+                class=" dropdown-menu-right"
+                ngbDropdownMenu
+              >
+                <a href="javascript:void(0)" ngbDropdownItem> Action </a>
+                <a href="javascript:void(0)" ngbDropdownItem> Another action </a>
+                <a href="javascript:void(0)" ngbDropdownItem> Something else </a>
+              </div>
+            </div>
+          </div>
+          <div class=" card-body">
+            <div class=" table-full-width table-responsive">
+              <table class=" table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class=" form-check">
+                        <label class=" form-check-label">
+                          <input
+                            class=" form-check-input"
+                            type="checkbox"
+                            value=""
+                          />
+  
+                          <span class=" form-check-sign">
+                            <span class=" check"> </span>
+                          </span>
+                        </label>
+                      </div>
+                    </td>
+                    <td>
+                      <p class=" title">Most Wins as captain of India</p>
+                      <p class=" text-muted">
+                        Most Wins as captain of India, with 40 wins out of 68 matches
+                      </p>
+                    </td>
+                    <td class=" td-actions text-right">
+                      <button class=" btn btn-link" type="button" placement="left" ngbTooltip="Edit Task" container="body" >
+                        <i class=" tim-icons icon-pencil"> </i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class=" form-check">
+                        <label class=" form-check-label">
+                          <input
+                            checked=""
+                            class=" form-check-input"
+                            type="checkbox"
+                            value=""
+                          />
+  
+                          <span class=" form-check-sign">
+                            <span class=" check"> </span>
+                          </span>
+                        </label>
+                      </div>
+                    </td>
+                    <td>
+                      <p class=" title">ODI centuries</p>
+                      <p class=" text-muted">
+                        Most ODI centuries ever (50).
+                      </p>
+                    </td>
+                    <td class=" td-actions text-right">
+                      <button class=" btn btn-link" type="button" placement="left" ngbTooltip="Edit Task" container="body" >
+                        <i class=" tim-icons icon-pencil"> </i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class=" form-check">
+                        <label class=" form-check-label">
+                          <input
+                            class=" form-check-input"
+                            type="checkbox"
+                            value=""
+                          />
+  
+                          <span class=" form-check-sign">
+                            <span class=" check"> </span>
+                          </span>
+                        </label>
+                      </div>
+                    </td>
+                    <td>
+                      <p class=" title">Most runs in T20 internationals</p>
+                      <p class=" text-muted">
+                        Most runs in T20 internationals – 4,037 runs.
+                      </p>
+                    </td>
+                    <td class=" td-actions text-right">
+                      <button class=" btn btn-link" type="button" placement="left" ngbTooltip="Edit Task" container="body" >
+                        <i class=" tim-icons icon-pencil"> </i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class=" form-check">
+                        <label class=" form-check-label">
+                          <input
+                            class=" form-check-input"
+                            type="checkbox"
+                            value=""
+                          />
+  
+                          <span class=" form-check-sign">
+                            <span class=" check"> </span>
+                          </span>
+                        </label>
+                      </div>
+                    </td>
+                    <td>
+                      <p class=" title">Most runs in IPL </p>
+                      <p class=" text-muted">
+                        Most runs in Indian Premier League – 7,624 runs.
+                      </p>
+                    </td>
+                    <td class=" td-actions text-right">
+                      <button class=" btn btn-link" type="button" placement="left" ngbTooltip="Edit Task" container="body"  >
+                        <i class=" tim-icons icon-pencil"> </i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class=" form-check">
+                        <label class=" form-check-label">
+                          <input
+                            class=" form-check-input"
+                            type="checkbox"
+                            value=""
+                          />
+  
+                          <span class=" form-check-sign">
+                            <span class=" check"> </span>
+                          </span>
+                        </label>
+                      </div>
+                    </td>
+                    <td>
+                      <p class=" title">Most runs in a single edition of IPL</p>
+                      <p class=" text-muted">
+                        Most runs in a single edition of IPL - 973 runs (2016).
+                      </p>
+                    </td>
+                    <td class=" td-actions text-right">
+                      <button class=" btn btn-link" type="button" placement="left" ngbTooltip="Edit Task" container="body" >
+                        <i class=" tim-icons icon-pencil"> </i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class=" form-check">
+                        <label class=" form-check-label">
+                          <input
+                            class=" form-check-input"
+                            type="checkbox"
+                            value=""
+                          />
+  
+                          <span class=" form-check-sign">
+                            <span class=" check"> </span>
+                          </span>
+                        </label>
+                      </div>
+                    </td>
+                    <td>
+                      <p class=" title">Double-hundreds in consecutive series</p>
+                      <p class=" text-muted">
+                        Four Test double-hundreds in four consecutive test series.
+                      </p>
+                    </td>
+                    <td class=" td-actions text-right">
+                      <button class=" btn btn-link" type="button" placement="left" ngbTooltip="Edit Task" container="body" >
+                        <i class=" tim-icons icon-pencil"> </i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" col-lg-6 col-md-12">
+        <div class=" card">
+          <div class="card-header">
+            <h4 class=" card-title">Centuries scored in country </h4>
+          </div>
+          <div class="card-body">
+           
+            <div class="chart-area"><canvas id="RunsByCountry"> </canvas></div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
